@@ -1,0 +1,235 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+/* Navbar Start */
+a.navlinks{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#navdiv{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 18px;
+    padding: 10px 40px;
+    font-weight: 500;
+}
+/* Navbar End */
+
+/* Backdrop Start */
+#backdrop{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    column-gap: 25px;
+    padding: 0px 8%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+/* #backdrop>div{
+    border: 1px solid black;
+} */
+#backdrop-left>h1{
+    font-weight: 700;
+    font-size: 32px;
+    color: #21243D;
+}
+#backdrop-left>p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #21243D;
+    padding-bottom: 10px;
+}
+#backdrop-button{
+    background-color: #F96F62;
+    color: white;  
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 0ch;
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#backdrop-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+#backdrop-left{
+    width: 100%;
+    text-align: center;
+}
+#backdrop-right{
+    margin-top: 25px;
+    text-align: center;
+}
+#myimg{
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+}
+/* Backdrop End */
+/* Recent Start */
+#recent-section{
+    background-color:#EDF7FA;
+    padding: 2% 3%;
+    padding-bottom: 40px;
+}
+#recent-post-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+#recent-post-header > h4{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #21243D;
+}
+#card-holder{
+    display: flex;
+    flex-direction: column;
+    column-gap: 2%;  
+}
+div.card{
+    color: #21243D;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 10px;
+}
+div.card>h1{
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.card>span{
+    font-size: 18px;
+    padding: 5px 10px;
+    padding-left: 0px;
+}
+div.card>p{
+    font-size: 16px;
+}
+/* Recent End */
+/* Featured Start */
+#featured-work{
+    background-color: white;
+    padding: 3% 10%;
+    padding-top: 8px;
+    flex-direction: column;
+}
+#featured-work>h5{
+    font-weight: 400;
+    font-size: 16px;
+    color: #21243D;
+    text-align: center;
+    margin: 5px 0px;
+}
+div.horizontal-card{
+    display: flex;
+    flex-direction: column;
+    column-gap: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+div.card-info>h1{
+    font-weight: 700;
+    font-size: 20px;
+    color: #21243D;
+    margin: 0px 0px;
+    margin-bottom: 8px;
+}
+div.card-info>img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+span.pill{
+    background-color: #142850;
+    border-radius: 25px;
+    color: white;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+#featured-subtitle{
+    padding-left: 20px;
+    color: #8695A4;
+    font-size: 18px;
+}
+div.card-info>img{
+    border-radius: 15px;
+}
+/* Featured End */
+/* Social Start */
+#social-media-links{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #142850;
+}
+#social-media-links>a{
+    color: #142850;
+}
+#copyright-text{
+    text-align: center;
+    margin: 0px 0px;
+    color: #142850;
+    font-size: 12px;
+    font-weight: 300;
+}
+/* Social End */
+/* Media Queries Start */
+@media screen and (min-width:500px){
+    #backdrop{
+        flex-direction: row;
+    }
+    #backdrop-left{
+        width: 50%;
+        text-align: left;
+    }
+    #backdrop-right{
+        width: 40%;
+        margin-top: 25px;
+        text-align: center;
+    }
+    #myimg{
+        width: 400px;
+    }
+    #backdrop-left>h1{
+        font-size: 40px;
+    }
+    #recent-section{
+        padding: 2% 10%;
+        padding-bottom: 40px;
+    }
+    #card-holder{
+        flex-direction: row;
+    }
+    #featured-work>h5{
+        font-size: 20px;
+        text-align: left;
+    }
+    div.card{
+        margin-bottom: 0px;
+    }
+    div.card>h1{
+        font-size: 26px;
+    }
+    div.horizontal-card{
+        display: flex;
+        flex-direction: row;
+    }
+    div.card-info>img{
+        width: 200px;
+    }
+}
