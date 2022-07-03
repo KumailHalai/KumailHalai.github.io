@@ -1,0 +1,153 @@
+body{
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#backcover{
+    width: 100%;
+}
+#backdrop-img{
+    height: 55vh;
+    width: 100%;
+}
+.backcover-context{
+    position: absolute;
+    z-index: 1;
+}
+#backcover > p{
+    font-size: 3rem;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    left: 26%;
+    font-weight: 800;
+}
+#backcover > i{
+    top: 5.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 72%;
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+}
+#backcover > form > input{
+    margin-left: auto;
+    margin-right: auto;
+    left: 26%;
+    top: 14%;
+    width: 46%;
+    height: 3rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 17px;
+    border: 0px;
+    outline:none;
+}
+#backcover > form > button{
+    height: 3.1rem;
+    width: 2.5rem;
+    left: 72%;
+    top: 14%;
+    border: 0px;
+    color: grey;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+#backcover > form > button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#tasks{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 26%;
+    z-index: 1;
+    top: 23%;
+    width: 48.5%;
+    min-height: 60vh;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.625);
+    border-radius: 10px;
+    padding: 0;
+    
+}
+#tasks > div{
+    display: flex;
+    flex-direction: column; 
+    border-radius: inherit;
+    justify-content: space-around;
+}
+#tasks > div > ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    width: 100%;
+    border-radius: inherit;
+}
+#tasks > div >ul >li{
+    padding: 0.8rem 1rem;
+    font-size: 20px;
+    word-wrap: break-word;
+    padding-right: 5px;
+    border-radius: inherit;
+}
+#tasks > div >ul >li:hover{
+    background-color: rgba(128, 128, 128, 0.088);
+    border-radius: inherit;
+}
+#tasks > div > ul > li> i {
+    color: grey;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.numoflist{
+    border-top: 1px grey;
+    font-size: 20px;
+    justify-content: flex-end;
+    border-radius: inherit;
+    padding: 10px;
+    border-top: 3px;
+    border-color: black;
+}
+#p-of-num{
+    padding: 0px 5px;
+    margin: 0px;
+}
+#p-of-num > i{
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    #backcover > p{
+        font-size: 2rem;
+        padding-left: 19px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    #backcover > i{
+        display: none;
+    }
+    #backcover > form > input{
+        top: 9%;
+        width: 65%;
+        align-content: center;
+        height: 3rem;
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+    }
+    #backcover > form > button{
+        top: 9%;
+        width: 2.5rem;
+        left: 75%;
+    }
+    #tasks{
+        top: 17%;
+        width: 70%;
+        left: 0;
+        right: 0;
+    }
+}
