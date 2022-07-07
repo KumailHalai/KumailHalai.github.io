@@ -8,7 +8,7 @@ async function myFunction(){
     const weather = second_response.current.temp_c
     $("#backdrop-left-h1").text(name + " " + first_response.results[0].name.last)
     $("#backdrop-left-p").text(`A ${first_response.results[0].gender} and a resident of ${city}, ${first_response.results[0].location.country} where temperature right now is ${weather} °C`)
-    await $("#myimg").attr("src", first_response.results[0].picture.thumbnail);
+    $("#myimg").attr("src", first_response.results[0].picture.thumbnail);
 
     const third_response = await (await fetch(`https://api.genderize.io?name=${name}`)).json()
     let correct = ""
@@ -29,8 +29,9 @@ async function myFunction(){
     $("#age-predictor").text(`The age for the name ${name} predicted by the website is ${fifth_response.name} with the age of ${fifth_response.age} as ${fifth_response.count} rows were counted to calculate the response. While the actual age of the person is ${first_response.results[0].dob.age}`)
   }
   myFunction();
-  $.get(`https://www.boredapi.com/api/activity`, function(resp){
-    $("#bored").text(`You should ${resp.activity} of type ${resp.type} to spend time doing something fun!`)
+  $.get(`http://www.boredapi.com/api/activity/`, function(response){
+    console.log(response)
+    $("#bored").text(`You should ${response.activity} of type ${response.type} to spend time doing something fun!`)
   })
   $.get(`https://api.kanye.rest`, function(resp){
     $("#kanyesays").text(`"${resp.quote}"`)
